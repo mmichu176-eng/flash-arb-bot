@@ -31,7 +31,7 @@ jobs:
       - name: Run scanner
         env:
           ARBITRUM_RPC_URL: ${{ secrets.ARBITRUM_RPC_URL }}
-          DRY_RUN: ${{ secrets.DRY_RUN || 'true' }}
+          DRY_RUN: 'true'${{ secrets.DRY_RUN || 'true' }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           CONTRACT_ADDRESS: ${{ secrets.CONTRACT_ADDRESS }}
           AAVE_FLASH_LOAN_PREMIUM_BPS: ${{ secrets.AAVE_FLASH_LOAN_PREMIUM_BPS || '5' }}
